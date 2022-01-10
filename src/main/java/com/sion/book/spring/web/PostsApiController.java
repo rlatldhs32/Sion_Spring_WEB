@@ -1,7 +1,9 @@
 package com.sion.book.spring.web;
 
 import com.sion.book.spring.service.posts.PostsService;
+import com.sion.book.spring.web.dto.PostsResponseDto;
 import com.sion.book.spring.web.dto.PostsSaveRequestDto;
+import com.sion.book.spring.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
