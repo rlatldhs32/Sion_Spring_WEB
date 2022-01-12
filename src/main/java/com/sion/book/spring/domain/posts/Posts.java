@@ -1,5 +1,7 @@
 package com.sion.book.spring.domain.posts;
 
+//import com.sion.book.spring.domain.BaseTimeEntity;
+import com.sion.book.spring.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,7 +14,7 @@ import javax.persistence.*;
 @Entity //JPA 테이블과 링크될 클래스임을 나타냄 Setter 메소드를 만들지 않음.
 //그러면 어떻게 DB에 값을 삽입?? -> 생성자를 통해서.값 변경이 필요한경우 그에 맞는 public 메소드 호출
 //여기선 생성자 대신에 빌더 클래스.
-public class Posts {//실제 DB 테이블과 매칭될 클래스, 보통 Entity 클래스라고함
+public class Posts extends BaseTimeEntity {//실제 DB 테이블과 매칭될 클래스, 보통 Entity 클래스라고함
     @Id //PK필드
     @GeneratedValue(strategy = GenerationType.IDENTITY) //규칙.자동증가
     private Long id;

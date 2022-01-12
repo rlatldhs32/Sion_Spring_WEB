@@ -2,7 +2,7 @@ package com.sion.book.spring.dto;
 
 import com.sion.book.spring.web.dto.HelloResponseDto;
 import org.assertj.core.api.Assertions;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class HelloResponseDtoTest {
     @Test
